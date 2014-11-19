@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   config.vm.provider :azure do |azure|
-    azure.vm_size = 'Small'
+    azure.vm_size = 'Medium'
+    azure.vm_image = 'c290a6b031d841e09f2da759bbabe71f__Oracle-Database-121010.v1-EE-Lnx'
   end
 end
